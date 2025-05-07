@@ -78,6 +78,31 @@
 			justify-content: center;
 		}
 
+		.container__controls {
+			margin-bottom: var(--rhythm-1);
+			width: 100%;
+		}
+
+		.controls {
+			padding: var(--rhythm-2) var(--rhythm-2) 0 var(--rhythm-3);
+			text-align: right;
+		}
+
+		.controls a {
+			align-items: center;
+			color: var(--accent-color);
+			display: inline-flex;
+			font-size: var(--small-font-size);
+			gap: 4px;
+			text-decoration: none;
+		}
+
+		.controls a::before {
+			content: "\e2c4";
+			font-family: "Material Icons";
+			font-size: var(--icon-font-size);
+		}
+
 		.page {
 			padding: var(--rhythm-4) var(--rhythm-2) var(--rhythm-4) var(--rhythm-3);
 		}
@@ -296,7 +321,11 @@
 
 		@media (min-width: 950px) {
 			.container {
-				padding: var(--rhythm-5) 0;
+				padding: var(--rhythm-4) 0;
+			}
+
+			.container__controls {
+				width: 900px;
 			}
 
 			.page {
@@ -370,6 +399,10 @@
 				text-decoration: none !important;
 			}
 
+			.container__controls {
+				display: none;
+			}
+
 			.page {
 				padding-top: 50pt;
 			}
@@ -405,7 +438,11 @@
 
 <body>
 	<div class="container">
-		<div class="page">
+		<div class="controls container__controls">
+			<a href="richard-benjamin-resume.pdf" download aria-label="Download resume as PDF">Download PDF</a>
+		</div>
+
+		<div class="page container__page">
 			<header class="header page__header">
 				<h1 id="name" class="header__name"></h1>
 				<h2 id="title" class="header__title"></h2>
