@@ -1,3 +1,3 @@
-# Resume
+# Resume (Beta)
 
-Brb
+An iterative version of my resume with features and stuff.
