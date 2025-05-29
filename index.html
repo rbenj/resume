@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume of Richard Benjamin, Senior Front-End Engineer.">
 
-  <title>Richard Benjamin - Resume</title>
+  <title>Richard Benjamin - Senior Front-End Engineer Resume</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,6 +46,21 @@
       --animate-hue-duration: 24s;
     }
 
+  	@media (prefers-contrast: high) {
+      :root {
+        --accent-color: #000;
+        --muted-color: #666;
+      }
+    }
+
+  	@media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
     @keyframes animate-hue {
       from { filter: hue-rotate(0deg); }
       to { filter: hue-rotate(360deg); }
@@ -63,6 +79,11 @@
       color: var(--accent-color);
     }
 
+		a:focus,
+		button:focus {
+			outline: 1px dotted var(--accent-color);
+    }
+
     body {
       background-color: var(--background-color);
       color: var(--text-color);
@@ -70,6 +91,18 @@
       font-size: var(--medium-font-size);
       line-height: var(--medium-line-height);
     }
+
+		.screen-reader-only {
+			border: 0;
+			clip: rect(0, 0, 0, 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
 
     .container {
       align-items: center;
@@ -282,25 +315,21 @@
       padding: 5px 10px;
     }
 
-    .experience__title {
-      animation: animate-hue var(--animate-hue-duration) linear infinite;
-      color: var(--accent-color);
-      font-weight: 600;
-    }
-
     .experience__item:not(:first-child) {
       margin-top: var(--rhythm-4);
     }
 
-    .experience__bullets {
-      margin: var(--rhythm-1) 0 0 var(--rhythm-2);
+    .experience__header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    .experience__meta {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: var(--rhythm-1);
+    .experience__title {
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      color: var(--accent-color);
+      flex: 0 0 100%;
+      font-weight: 600;
     }
 
     .experience__company {
@@ -309,6 +338,14 @@
 
     .experience__period {
       color: var(--muted-color);
+    }
+
+    .experience__summary {
+      margin-top: var(--rhythm-1);
+    }
+
+    .experience__bullets {
+      margin: var(--rhythm-1) 0 0 var(--rhythm-2);
     }
 
     @media (min-width: 950px) {
@@ -440,15 +477,16 @@
       </a>
     </div>
 
-    <div class="page container__page">
+    <main class="page container__page" role="main">
       <header class="header page__header">
         <h1 id="name" class="header__name"></h1>
-        <h2 id="title" class="header__title"></h2>
+        <div id="title" class="header__title" role="doc-subtitle"></div>
       </header>
 
       <div class="page__right">
-        <section class="info page__info box">
-          <ul class="info__items">
+        <section class="info page__info box" aria-labelledby="contact-heading">
+          <h2 id="contact-heading" class="screen-reader-only">Contact Information</h2>
+          <ul class="info__items" role="list">
             <li id="contact-email" class="info__item info__item--email"></li>
             <li id="contact-phone" class="info__item info__item--phone"></li>
             <li id="contact-linkedin" class="info__item info__item--linkedin"></li>
@@ -456,36 +494,36 @@
           </ul>
         </section>
 
-        <section class="summary page__summary box">
-          <h3 class="box__title">About</h3>
-          <p id="summary" class="summary__content"></p>
+        <section class="summary page__summary box" aria-labelledby="summary-heading">
+          <h2 id="summary-heading" class="box__title">About</h2>
+          <div id="summary" class="summary__content"></div>
         </section>
 
-        <section class="achievements page__achievements box">
-          <h3 class="box__title">Achievements</h3>
+        <section class="achievements page__achievements box" aria-labelledby="achievements-heading">
+          <h2 id="achievements-heading" class="box__title">Achievements</h2>
           <div id="achievements" class="achievements__items"></div>
         </section>
 
-        <section class="skills page__skills box">
-          <h3 class="box__title">Skills</h3>
-          <ul id="skills" class="skills__items"></ul>
+        <section class="skills page__skills box" aria-labelledby="skills-heading">
+          <h2 id="skills-heading" class="box__title">Skills</h2>
+          <ul id="skills" class="skills__items" role="list"></ul>
         </section>
       </div>
 
-      <section class="experience page__experience section">
-        <h3 class="section__title">Experience</h3>
+      <section class="experience page__experience section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="section__title">Experience</h2>
         <div id="experience" class="experience__items"></div>
       </section>
-    </div>
+    </main>
   </div>
 
   <script type="text/template" id="achievements-template">
-    <div class="achievement__item">
+    <article class="achievement__item">
       <div class="achievement__icon achievement__icon--${icon}"></div>
       <div class="achievement__content">
         <p class="achievement__description">${description}</p>
       </div>
-    </div>
+    </article>
   </script>
 
   <script type="text/template" id="skills-template">
@@ -493,15 +531,15 @@
   </script>
 
   <script type="text/template" id="experience-template">
-    <div class="experience__item">
-      <h4 class="experience__title">${title}</h4>
-      <div class="experience__meta">
-        <div class="experience__company">${company}</div>
-        <div class="experience__period">${period}</div>
-      </div>
+    <article class="experience__item">
+      <header class="experience__header">
+    		<h3 class="experience__title">${title}</h3>
+        <h4 class="experience__company">${company}</h4>
+        <time class="experience__period" datetime="${startYear}-${endYear}">${period}</time>
+    	</header>
       <p class="experience__summary">${summary}</p>
-      <ul class="experience__bullets">${bullets}</ul>
-    </div>
+      <ul class="experience__bullets" role="list">${bullets}</ul>
+    </article>
   </script>
 
   <script type="text/template" id="experience-bullet-template">
