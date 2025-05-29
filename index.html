@@ -9,12 +9,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=optional" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=optional" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </noscript>
 
@@ -26,6 +26,8 @@
       --text-color: #000;
       --accent-color: #6a4c93;
       --muted-color: #aaa;
+			--font-family-heading: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
+			--font-family-body: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       --small-font-size: 12px;
       --small-line-height: 22px;
       --medium-font-size: 14px;
@@ -87,7 +89,7 @@
     body {
       background-color: var(--background-color);
       color: var(--text-color);
-      font-family: "Inter", sans-serif;
+      font-family: var(--font-family-body);
       font-size: var(--medium-font-size);
       line-height: var(--medium-line-height);
     }
@@ -149,7 +151,7 @@
     }
 
     .header {
-      font-family: "Manrope", sans-serif;
+      font-family: var(--font-family-heading);
       font-weight: 600;
     }
 
@@ -178,7 +180,7 @@
       background-color: var(--background-color);
       border: 1px solid var(--outline-color);
       display: inline-block;
-      font-family: "Manrope", sans-serif;
+      font-family: var(--font-family-heading);
       font-size: var(--large-font-size);
       font-weight: 600;
       left: calc(-1 * var(--rhythm-4));
@@ -201,7 +203,7 @@
     }
 
     .section__title {
-      font-family: "Manrope", sans-serif;
+      font-family: var(--font-family-heading);
       font-size: var(--large-font-size);
       font-weight: 600;
       line-height: var(--large-line-height);
