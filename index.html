@@ -1,628 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Richard Benjamin - Resume</title>
+  <title>Richard Benjamin - Resume</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" as="style">
-	<link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
-	<noscript>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	</noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </noscript>
 
-	<style>
-		:root {
-			--background-color: #fff;
-			--outline-color: #1a1a1a;
-			--page-outline-color: #e3e3d3;
-			--text-color: #000;
-			--accent-color: #6a4c93;
-			--muted-color: #aaa;
-			--small-font-size: 12px;
-			--small-line-height: 22px;
-			--medium-font-size: 14px;
-			--medium-line-height: 22px;
-			--large-font-size: 22px;
-			--large-line-height: 33px;
-			--x-large-font-size: 44px;
-			--x-large-line-height: 44px;
-			--icon-font-size: 18px;
-			--col-1: 430px;
-			--col-2: 300px;
-			--rhythm-1: 11px;
-			--rhythm-2: 22px;
-			--rhythm-3: 33px;
-			--rhythm-4: 44px;
-			--rhythm-5: 55px;
-			--rhythm-6: 66px;
-			--animate-hue-duration: 24s;
-		}
+  <style>
+    :root {
+      --background-color: #fff;
+      --outline-color: #1a1a1a;
+      --page-outline-color: #e3e3d3;
+      --text-color: #000;
+      --accent-color: #6a4c93;
+      --muted-color: #aaa;
+      --small-font-size: 12px;
+      --small-line-height: 22px;
+      --medium-font-size: 14px;
+      --medium-line-height: 22px;
+      --large-font-size: 22px;
+      --large-line-height: 33px;
+      --x-large-font-size: 44px;
+      --x-large-line-height: 44px;
+      --icon-font-size: 18px;
+      --col-1: 430px;
+      --col-2: 300px;
+      --rhythm-1: 11px;
+      --rhythm-2: 22px;
+      --rhythm-3: 33px;
+      --rhythm-4: 44px;
+      --rhythm-5: 55px;
+      --rhythm-6: 66px;
+      --animate-hue-duration: 24s;
+    }
 
-		@keyframes animate-hue {
-			from { filter: hue-rotate(0deg); }
-			to { filter: hue-rotate(360deg); }
-		}
+    @keyframes animate-hue {
+      from { filter: hue-rotate(0deg); }
+      to { filter: hue-rotate(360deg); }
+    }
 
-		*,
-		*::before,
-		*::after {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-		a {
-			animation: animate-hue var(--animate-hue-duration) linear infinite;
-			color: var(--accent-color);
-		}
+    a {
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      color: var(--accent-color);
+    }
 
-		body {
-			background-color: var(--background-color);
-			color: var(--text-color);
-			font-family: "Inter", sans-serif;
-			font-size: var(--medium-font-size);
-			line-height: var(--medium-line-height);
-		}
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: "Inter", sans-serif;
+      font-size: var(--medium-font-size);
+      line-height: var(--medium-line-height);
+    }
 
-		.container {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
+    .container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-		.container__controls {
-			margin-bottom: var(--rhythm-1);
-			width: 100%;
-		}
+    .container__controls {
+      margin-bottom: var(--rhythm-1);
+      width: 100%;
+    }
 
-		.controls {
-			padding: var(--rhythm-2) var(--rhythm-2) 0 var(--rhythm-3);
-			text-align: right;
-		}
+    .controls {
+      padding: var(--rhythm-2) var(--rhythm-2) 0 var(--rhythm-3);
+      text-align: right;
+    }
 
-		.controls a {
-			align-items: center;
-			color: var(--accent-color);
-			display: inline-flex;
-			font-size: var(--small-font-size);
-			gap: 4px;
-			text-decoration: none;
-		}
+    .controls a {
+      align-items: center;
+      color: var(--accent-color);
+      display: inline-flex;
+      font-size: var(--small-font-size);
+      gap: 4px;
+      text-decoration: none;
+    }
 
-		.controls a::before {
-			content: "\e2c4";
-			font-family: "Material Icons";
-			font-size: var(--icon-font-size);
-		}
+    .controls a::before {
+      content: "\e2c4";
+      font-family: "Material Icons";
+      font-size: var(--icon-font-size);
+    }
 
-		.page {
-			padding: var(--rhythm-4) var(--rhythm-2) var(--rhythm-4) var(--rhythm-3);
-		}
+    .page {
+      padding: var(--rhythm-4) var(--rhythm-2) var(--rhythm-4) var(--rhythm-3);
+    }
 
-		.page__right > * {
-			margin-top: var(--rhythm-4);
-		}
+    .page__right > * {
+      margin-top: var(--rhythm-4);
+    }
 
-		.page__experience {
-			margin-top: var(--rhythm-6);
-		}
+    .page__experience {
+      margin-top: var(--rhythm-6);
+    }
 
-		.header {
-			font-family: "Manrope", sans-serif;
-			font-weight: 600;
-		}
+    .header {
+      font-family: "Manrope", sans-serif;
+      font-weight: 600;
+    }
 
-		.header__name {
-			animation: animate-hue var(--animate-hue-duration) linear infinite;
-			color: var(--accent-color);
-			font-size: var(--x-large-font-size);
-			line-height: var(--x-large-line-height);
-			text-transform: uppercase;
-		}
+    .header__name {
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      color: var(--accent-color);
+      font-size: var(--x-large-font-size);
+      line-height: var(--x-large-line-height);
+      text-transform: uppercase;
+    }
 
-		.header__title {
-			font-size: var(--large-font-size);
-			line-height: var(--large-line-height);
-			margin-top: var(--rhythm-1);
-		}
+    .header__title {
+      font-size: var(--large-font-size);
+      line-height: var(--large-line-height);
+      margin-top: var(--rhythm-1);
+    }
 
-		.box {
-			border-left: 1px solid var(--outline-color);
-			font-size: var(--small-font-size);
-			line-height: var(--small-line-height);
-			padding-left: var(--rhythm-2);
-		}
+    .box {
+      border-left: 1px solid var(--outline-color);
+      font-size: var(--small-font-size);
+      line-height: var(--small-line-height);
+      padding-left: var(--rhythm-2);
+    }
 
-		.box__title {
-			background-color: var(--background-color);
-			border: 1px solid var(--outline-color);
-			display: inline-block;
-			font-family: "Manrope", sans-serif;
-			font-size: var(--large-font-size);
-			font-weight: 600;
-			left: calc(-1 * var(--rhythm-4));
-			line-height: var(--large-line-height);
-			margin-bottom: calc(var(--rhythm-1) + 12px);
-			padding: 0 var(--rhythm-1);
-			position: relative;
-		}
+    .box__title {
+      background-color: var(--background-color);
+      border: 1px solid var(--outline-color);
+      display: inline-block;
+      font-family: "Manrope", sans-serif;
+      font-size: var(--large-font-size);
+      font-weight: 600;
+      left: calc(-1 * var(--rhythm-4));
+      line-height: var(--large-line-height);
+      margin-bottom: calc(var(--rhythm-1) + 12px);
+      padding: 0 var(--rhythm-1);
+      position: relative;
+    }
 
-		.box__title::after {
-			border-color: transparent var(--outline-color) transparent transparent;
-			border-style: solid;
-			border-width: 0 20px 12px 0;
-			bottom: -13px;
-			content: "";
-			height: 0;
-			left: 0;
-			position: absolute;
-			width: 0;
-		}
+    .box__title::after {
+      border-color: transparent var(--outline-color) transparent transparent;
+      border-style: solid;
+      border-width: 0 20px 12px 0;
+      bottom: -13px;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      width: 0;
+    }
 
-		.section__title {
-			font-family: "Manrope", sans-serif;
-			font-size: var(--large-font-size);
-			font-weight: 600;
-			line-height: var(--large-line-height);
-			margin-bottom: var(--rhythm-2);
-		}
+    .section__title {
+      font-family: "Manrope", sans-serif;
+      font-size: var(--large-font-size);
+      font-weight: 600;
+      line-height: var(--large-line-height);
+      margin-bottom: var(--rhythm-2);
+    }
 
-		.info {
-			align-items: center;
-			display: flex;
-		}
+    .info {
+      align-items: center;
+      display: flex;
+    }
 
-		.info__items {
-			color: var(--muted-color);
-			list-style: none;
-		}
+    .info__items {
+      color: var(--muted-color);
+      list-style: none;
+    }
 
-		.info__item {
-			align-items: center;
-			display: flex;
-			gap: var(--rhythm-1);
-			margin-bottom: var(--rhythm-1);
-		}
+    .info__item {
+      align-items: center;
+      display: flex;
+      gap: var(--rhythm-1);
+      margin-bottom: var(--rhythm-1);
+    }
 
-		.info__item a,
-		.info__item a:hover {
-			color: var(--muted-color);
-		}
+    .info__item a,
+    .info__item a:hover {
+      color: var(--muted-color);
+    }
 
-		.info__item::before {
-			animation: animate-hue var(--animate-hue-duration) linear infinite;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			color: var(--accent-color);
-			content: "";
-			font-family: "Material Icons";
-			font-size: var(--icon-font-size);
-		}
+    .info__item::before {
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: var(--accent-color);
+      content: "";
+      font-family: "Material Icons";
+      font-size: var(--icon-font-size);
+    }
 
-		.info__item--email::before {
-			content: "\e0e1";
-		}
+    .info__item--email::before {
+      content: "\e0e1";
+    }
 
-		.info__item--phone::before {
-			content: "\e0cd";
-		}
+    .info__item--phone::before {
+      content: "\e0cd";
+    }
 
-		.info__item--linkedin::before {
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236a4c93'%3E%3Cpath d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z'/%3E%3C/svg%3E");
-			height: 20px;
-			width: 20px;
-		}
+    .info__item--linkedin::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236a4c93'%3E%3Cpath d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z'/%3E%3C/svg%3E");
+      height: 20px;
+      width: 20px;
+    }
 
-		.info__item--github::before {
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236a4c93'%3E%3Cpath d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z'/%3E%3C/svg%3E");
-			height: 20px;
-			width: 20px;
-		}
+    .info__item--github::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236a4c93'%3E%3Cpath d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z'/%3E%3C/svg%3E");
+      height: 20px;
+      width: 20px;
+    }
 
-		.achievement__item:not(:first-child) {
-			margin-top: var(--rhythm-1);
-		}
+    .achievement__item:not(:first-child) {
+      margin-top: var(--rhythm-1);
+    }
 
-		.achievement__icon {
-			align-items: center;
-			animation: animate-hue var(--animate-hue-duration) linear infinite;
-			background-color: var(--accent-color);
-			border-radius: 50%;
-			color: var(--background-color);
-			display: flex;
-			float: left;
-			height: 42px;
-			justify-content: center;
-			margin-top: 4px;
-			width: 42px;
-		}
+    .achievement__icon {
+      align-items: center;
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      color: var(--background-color);
+      display: flex;
+      float: left;
+      height: 42px;
+      justify-content: center;
+      margin-top: 4px;
+      width: 42px;
+    }
 
-		.achievement__icon::before {
-			content: "";
-			font-family: "Material Icons";
-			font-size: 22px;
-		}
+    .achievement__icon::before {
+      content: "";
+      font-family: "Material Icons";
+      font-size: 22px;
+    }
 
-		.achievement__icon--timer::before {
-			content: "\e425";
-		}
+    .achievement__icon--timer::before {
+      content: "\e425";
+    }
 
-		.achievement__icon--visibility::before {
-			content: "\e8f4";
-		}
+    .achievement__icon--visibility::before {
+      content: "\e8f4";
+    }
 
-		.achievement__description {
-			font-size: var(--small-font-size);
-			line-height: var(--small-line-height);
-			margin-left: 54px;
-		}
+    .achievement__description {
+      font-size: var(--small-font-size);
+      line-height: var(--small-line-height);
+      margin-left: 54px;
+    }
 
-		.skills__items {
-			display: flex;
-			flex-wrap: wrap;
-			list-style: none;
-		}
+    .skills__items {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
 
-		.skills__item {
-			animation: animate-hue var(--animate-hue-duration) linear infinite;
-			background-color: var(--accent-color);
-			border-radius: 5px;
-			color: var(--background-color);
-			font-weight: bold;
-			margin: 0 10px 10px 0;
-			padding: 5px 10px;
-		}
+    .skills__item {
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      background-color: var(--accent-color);
+      border-radius: 5px;
+      color: var(--background-color);
+      font-weight: bold;
+      margin: 0 10px 10px 0;
+      padding: 5px 10px;
+    }
 
-		.experience__title {
-			animation: animate-hue var(--animate-hue-duration) linear infinite;
-			color: var(--accent-color);
-			font-weight: 600;
-		}
+    .experience__title {
+      animation: animate-hue var(--animate-hue-duration) linear infinite;
+      color: var(--accent-color);
+      font-weight: 600;
+    }
 
-		.experience__item:not(:first-child) {
-			margin-top: var(--rhythm-4);
-		}
+    .experience__item:not(:first-child) {
+      margin-top: var(--rhythm-4);
+    }
 
-		.experience__bullets {
-			margin: var(--rhythm-1) 0 0 var(--rhythm-2);
-		}
+    .experience__bullets {
+      margin: var(--rhythm-1) 0 0 var(--rhythm-2);
+    }
 
-		.experience__meta {
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: var(--rhythm-1);
-		}
+    .experience__meta {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: var(--rhythm-1);
+    }
 
-		.experience__company {
-			font-weight: 600;
-		}
+    .experience__company {
+      font-weight: 600;
+    }
 
-		.experience__period {
-			color: var(--muted-color);
-		}
+    .experience__period {
+      color: var(--muted-color);
+    }
 
-		@media (min-width: 950px) {
-			.container {
-				padding: var(--rhythm-4) 0;
-			}
+    @media (min-width: 950px) {
+      .container {
+        padding: var(--rhythm-4) 0;
+      }
 
-			.container__controls {
-				width: 900px;
-			}
+      .container__controls {
+        width: 900px;
+      }
 
-			.page {
-				aspect-ratio: 8 / 11.5;
-				border-radius: 14px;
-				border: 1px solid var(--page-outline-color);
-				box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-				padding: var(--rhythm-5) var(--rhythm-4) 0;
-				width: 900px;
-			}
+      .page {
+        aspect-ratio: 8 / 11.5;
+        border-radius: 14px;
+        border: 1px solid var(--page-outline-color);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        padding: var(--rhythm-5) var(--rhythm-4) 0;
+        width: 900px;
+      }
 
-			.page__header {
-				float: left;
-				width: var(--col-1);
-			}
+      .page__header {
+        float: left;
+        width: var(--col-1);
+      }
 
-			.page__right {
-				float: right;
-				width: var(--col-2);
-			}
+      .page__right {
+        float: right;
+        width: var(--col-2);
+      }
 
-			.page__info {
-				margin-top: 0;
-			}
+      .page__info {
+        margin-top: 0;
+      }
 
-			.page__experience {
-				clear: left;
-				margin-top: 0;
-				padding-top: var(--rhythm-4);
-				width: var(--col-1);
-			}
-		}
+      .page__experience {
+        clear: left;
+        margin-top: 0;
+        padding-top: var(--rhythm-4);
+        width: var(--col-1);
+      }
+    }
 
-		@media print {
-			:root {
-				--muted-color: #777;
-				--small-font-size: 8pt;
-				--small-line-height: 12pt;
-				--medium-font-size: 10pt;
-				--medium-line-height: 12pt;
-				--large-font-size: 14pt;
-				--large-line-height: 18pt;
-				--x-large-font-size: 22pt;
-				--x-large-line-height: 24pt;
-				--icon-font-size: 14pt;
-				--col-1: 260pt;
-				--col-2: 180pt;
-				--rhythm-1: 6pt;
-				--rhythm-2: 12pt;
-				--rhythm-3: 18pt;
-				--rhythm-4: 24pt;
-				--rhythm-5: 30pt;
-				--rhythm-6: 36pt;
-			}
+    @media print {
+      :root {
+        --muted-color: #777;
+        --small-font-size: 8pt;
+        --small-line-height: 12pt;
+        --medium-font-size: 10pt;
+        --medium-line-height: 12pt;
+        --large-font-size: 14pt;
+        --large-line-height: 18pt;
+        --x-large-font-size: 22pt;
+        --x-large-line-height: 24pt;
+        --icon-font-size: 14pt;
+        --col-1: 260pt;
+        --col-2: 180pt;
+        --rhythm-1: 6pt;
+        --rhythm-2: 12pt;
+        --rhythm-3: 18pt;
+        --rhythm-4: 24pt;
+        --rhythm-5: 30pt;
+        --rhythm-6: 36pt;
+      }
 
-			@page {
-				size: letter;
-				margin: 0;
-			}
+      @page {
+        size: letter;
+        margin: 0;
+      }
 
-			*,
-			*::before,
-			*::after {
-				animation: none !important;
-				transition: none !important;
-				-webkit-print-color-adjust: exact;
-				print-color-adjust: exact;
-			}
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
 
-			a {
-				text-decoration: none !important;
-			}
+      a {
+        text-decoration: none !important;
+      }
 
-			.container__controls {
-				display: none;
-			}
+      .container__controls {
+        display: none;
+      }
 
-			.page {
-				padding-top: 50pt;
-			}
+      .page {
+        padding-top: 50pt;
+      }
 
-			.page__header {
-				width: var(--col-1);
-				float: left;
-			}
+      .page__header {
+        width: var(--col-1);
+        float: left;
+      }
 
-			.page__right {
-				width: var(--col-2);
-				float: right;
-			}
+      .page__right {
+        width: var(--col-2);
+        float: right;
+      }
 
-			.page__info {
-				margin-top: 0;
-			}
+      .page__info {
+        margin-top: 0;
+      }
 
-			.page__experience {
-				clear: left;
-				margin-right: 240pt;
-				margin-top: 0;
-				padding-top: var(--rhythm-4);
-				width: var(--col-1);
-			}
+      .page__experience {
+        clear: left;
+        margin-right: 240pt;
+        margin-top: 0;
+        padding-top: var(--rhythm-4);
+        width: var(--col-1);
+      }
 
-			.box__title {
-				left: -28pt;
-			}
-		}
-	</style>
+      .box__title {
+        left: -28pt;
+      }
+    }
+  </style>
 </head>
 
 <body>
-	<div class="container">
-		<div class="controls container__controls">
-			<a href="Richard-Benjamin_Senior-Front-End-Engineer_Resume_2025.pdf" download aria-label="Download resume as PDF">Download PDF</a>
-		</div>
+  <div class="container">
+    <div class="controls container__controls">
+      <a
+        aria-label="Download resume as PDF"
+        download
+        href="Richard-Benjamin_Senior-Front-End-Engineer_Resume_2025.pdf"
+      >
+        Download PDF
+      </a>
+    </div>
 
-		<div class="page container__page">
-			<header class="header page__header">
-				<h1 id="name" class="header__name"></h1>
-				<h2 id="title" class="header__title"></h2>
-			</header>
+    <div class="page container__page">
+      <header class="header page__header">
+        <h1 id="name" class="header__name"></h1>
+        <h2 id="title" class="header__title"></h2>
+      </header>
 
-			<div class="page__right">
-				<section class="info page__info box">
-					<ul class="info__items">
-						<li id="contact-email" class="info__item info__item--email"></li>
-						<li id="contact-phone" class="info__item info__item--phone"></li>
-						<li id="contact-linkedin" class="info__item info__item--linkedin"></li>
-						<li id="contact-github" class="info__item info__item--github"></li>
-					</ul>
-				</section>
+      <div class="page__right">
+        <section class="info page__info box">
+          <ul class="info__items">
+            <li id="contact-email" class="info__item info__item--email"></li>
+            <li id="contact-phone" class="info__item info__item--phone"></li>
+            <li id="contact-linkedin" class="info__item info__item--linkedin"></li>
+            <li id="contact-github" class="info__item info__item--github"></li>
+          </ul>
+        </section>
 
-				<section class="summary page__summary box">
-					<h3 class="box__title">About</h3>
-					<p id="summary" class="summary__content"></p>
-				</section>
+        <section class="summary page__summary box">
+          <h3 class="box__title">About</h3>
+          <p id="summary" class="summary__content"></p>
+        </section>
 
-				<section class="achievements page__achievements box">
-					<h3 class="box__title">Achievements</h3>
-					<div id="achievements" class="achievements__items"></div>
-				</section>
+        <section class="achievements page__achievements box">
+          <h3 class="box__title">Achievements</h3>
+          <div id="achievements" class="achievements__items"></div>
+        </section>
 
-				<section class="skills page__skills box">
-					<h3 class="box__title">Skills</h3>
-					<ul id="skills" class="skills__items"></ul>
-				</section>
-			</div>
+        <section class="skills page__skills box">
+          <h3 class="box__title">Skills</h3>
+          <ul id="skills" class="skills__items"></ul>
+        </section>
+      </div>
 
-			<section class="experience page__experience section">
-				<h3 class="section__title">Experience</h3>
-				<div id="experience" class="experience__items"></div>
-			</section>
-		</div>
-	</div>
+      <section class="experience page__experience section">
+        <h3 class="section__title">Experience</h3>
+        <div id="experience" class="experience__items"></div>
+      </section>
+    </div>
+  </div>
 
-	<script type="text/template" id="achievements-template">
-		<div class="achievement__item">
-			<div class="achievement__icon achievement__icon--${icon}"></div>
-			<div class="achievement__content">
-				<p class="achievement__description">${description}</p>
-			</div>
-		</div>
-	</script>
+  <script type="text/template" id="achievements-template">
+    <div class="achievement__item">
+      <div class="achievement__icon achievement__icon--${icon}"></div>
+      <div class="achievement__content">
+        <p class="achievement__description">${description}</p>
+      </div>
+    </div>
+  </script>
 
-	<script type="text/template" id="skills-template">
-		<li class="skills__item">${text}</li>
-	</script>
+  <script type="text/template" id="skills-template">
+    <li class="skills__item">${text}</li>
+  </script>
 
-	<script type="text/template" id="experience-template">
-		<div class="experience__item">
-			<h4 class="experience__title">${title}</h4>
-			<div class="experience__meta">
-				<div class="experience__company">${company}</div>
-				<div class="experience__period">${period}</div>
-			</div>
-			<p class="experience__summary">${summary}</p>
-			<ul class="experience__bullets">${bullets}</ul>
-		</div>
-	</script>
+  <script type="text/template" id="experience-template">
+    <div class="experience__item">
+      <h4 class="experience__title">${title}</h4>
+      <div class="experience__meta">
+        <div class="experience__company">${company}</div>
+        <div class="experience__period">${period}</div>
+      </div>
+      <p class="experience__summary">${summary}</p>
+      <ul class="experience__bullets">${bullets}</ul>
+    </div>
+  </script>
 
-	<script type="text/template" id="experience-bullet-template">
-		<li class="experience__bullet">${text}</li>
-	</script>
+  <script type="text/template" id="experience-bullet-template">
+    <li class="experience__bullet">${text}</li>
+  </script>
 
-	<script>
-		const data = {
-			name: "Richard Benjamin",
-			title: "Senior Front-End Engineer",
-			info: {
-				email: "richardbenjamin@me.com",
-				phone: "(503) 367-9244",
-				linkedin: "rbenj",
-				github: "rbenj",
-			},
-			summary: "A builder who likes to move fast, iterate, and optimize. I love engineering software that people want to use. Known for solving problems and driving growth, I enjoy being a positive force for teams creating remarkable software.",
-			achievements: [
-				{
-					description: "Lifted Core Web Vitals into the top 10% of large-scale media sites, delivering industry-leading front-end performance.",
-					icon: "timer",
-				},
-				{
-					description: "Boosted ad viewability from 30% to 80% across 90M monthly impressions by implementing a context-aware strategy combining content proximity and user-timing signals.",
-					icon: "visibility",
-				},
-			],
-			skills: [
-				"TypeScript",
-				"React",
-				"Redux",
-				"CSS",
-				"Jest",
-				"Vite",
-				"Webpack",
-				"Docker",
-				"User Experience",
-				"Web Optimization",
-				"Accessibility",
-				"Technical SEO",
-				"A/B Testing",
-				"Ad Tech",
-				"Leadership",
-			],
-			experience: [
-				{
-					title: "Principal Software Engineer",
-					company: "Digital Trends",
-					startYear: "2022",
-					endYear: "2025",
-					summary: "Owned front-end performance and user experience for a tech-news platform with 30M monthly active users; set technical strategy and mentored engineers.",
-					bullets: [
-						"Lifted Core Web Vitals from \"Needs Improvement\" to top 10% among large media sites.",
-						"Built a proprietary A/B testing framework that raised user engagement by 70%.",
-					],
-				},
-				{
-					title: "Dev Manager",
-					company: "Digital Trends",
-					startYear: "2019",
-					endYear: "2022",
-					summary: "Led a cross-functional team that shipped a new content platform and next-gen ad tech while maintaining high performance.",
-					bullets: [
-						"Delivered a modular content platform that cut new vertical launch time from four weeks to same-day.",
-						"Hit 80% ad viewability compliance ahead of industry peers by utilizing a context-aware, user-timing strategy.",
-						"Built an ad templating and deployment tool to automate creative roll-outs and reduce engineering effort.",
-					]
-				},
-				{
-					title: "Senior Web Developer",
-					company: "Digital Trends",
-					startYear: "2012",
-					endYear: "2019",
-					summary: "Helped modernize the legacy WordPress stack into a modular, high-traffic publishing platform; pioneered successful monetization features.",
-					bullets: [
-						"Completed a full WordPress re-architecture and rebrand that led to a 30% increase in session duration.",
-						"Developed a Prebid/GPT wrapper to unlock new programmatic revenue and custom ad unit capabilities.",
-					],
-				},
-				{
-					title: "Web Developer",
-					company: "Freelance",
-					startYear: "2001",
-					endYear: "2011",
-					summary: "Produced tailored sites and web apps for high-profile clients, and maintained long-term relationships for over a decade.",
-					bullets: [],
-				},
-			],
-		};
+  <script>
+    const data = {
+      name: "Richard Benjamin",
+      title: "Senior Front-End Engineer",
+      info: {
+        email: "richardbenjamin@me.com",
+        phone: "(503) 367-9244",
+        linkedin: "rbenj",
+        github: "rbenj",
+      },
+      summary: "A builder who likes to move fast, iterate, and optimize. I love engineering software that people want to use. Known for solving problems and driving growth, I enjoy being a positive force for teams creating remarkable software.",
+      achievements: [
+        {
+          description: "Lifted Core Web Vitals into the top 10% of large-scale media sites, delivering industry-leading front-end performance.",
+          icon: "timer",
+        },
+        {
+          description: "Boosted ad viewability from 30% to 80% across 90M monthly impressions by implementing a context-aware strategy combining content proximity and user-timing signals.",
+          icon: "visibility",
+        },
+      ],
+      skills: [
+        "TypeScript",
+        "React",
+        "Redux",
+        "CSS",
+        "Jest",
+        "Vite",
+        "Webpack",
+        "Docker",
+        "User Experience",
+        "Web Optimization",
+        "Accessibility",
+        "Technical SEO",
+        "A/B Testing",
+        "Ad Tech",
+        "Leadership",
+      ],
+      experience: [
+        {
+          title: "Principal Software Engineer",
+          company: "Digital Trends",
+          startYear: "2022",
+          endYear: "2025",
+          summary: "Owned front-end performance and user experience for a tech-news platform with 30M monthly active users; set technical strategy and mentored engineers.",
+          bullets: [
+            "Lifted Core Web Vitals from \"Needs Improvement\" to top 10% among large media sites.",
+            "Built a proprietary A/B testing framework that raised user engagement by 70%.",
+          ],
+        },
+        {
+          title: "Dev Manager",
+          company: "Digital Trends",
+          startYear: "2019",
+          endYear: "2022",
+          summary: "Led a cross-functional team that shipped a new content platform and next-gen ad tech while maintaining high performance.",
+          bullets: [
+            "Delivered a modular content platform that cut new vertical launch time from four weeks to same-day.",
+            "Hit 80% ad viewability compliance ahead of industry peers by utilizing a context-aware, user-timing strategy.",
+            "Built an ad templating and deployment tool to automate creative roll-outs and reduce engineering effort.",
+          ]
+        },
+        {
+          title: "Senior Web Developer",
+          company: "Digital Trends",
+          startYear: "2012",
+          endYear: "2019",
+          summary: "Helped modernize the legacy WordPress stack into a modular, high-traffic publishing platform; pioneered successful monetization features.",
+          bullets: [
+            "Completed a full WordPress re-architecture and rebrand that led to a 30% increase in session duration.",
+            "Developed a Prebid/GPT wrapper to unlock new programmatic revenue and custom ad unit capabilities.",
+          ],
+        },
+        {
+          title: "Web Developer",
+          company: "Freelance",
+          startYear: "2001",
+          endYear: "2011",
+          summary: "Produced tailored sites and web apps for high-profile clients, and maintained long-term relationships for over a decade.",
+          bullets: [],
+        },
+      ],
+    };
 
-		function processTemplate(template, values) {
-			return template.replace(/\${(\w+)}/g, (match, key) => {
-				return key.split('.').reduce((obj, prop) => obj?.[prop], values) ?? '';
-			});
-		}
+    function processTemplate(template, values) {
+      return template.replace(/\${(\w+)}/g, (match, key) => {
+        return key.split('.').reduce((obj, prop) => obj?.[prop], values) ?? '';
+      });
+    }
 
-		document.getElementById('name').textContent = data.name;
-		document.getElementById('title').textContent = data.title;
+    (function() {
+      document.getElementById('name').textContent = data.name;
+      document.getElementById('title').textContent = data.title;
 
-		document.getElementById('contact-email').textContent = data.info.email;
-		document.getElementById('contact-phone').textContent = data.info.phone;
-		document.getElementById('contact-linkedin').innerHTML = `<a href="https://linkedin.com/in/${data.info.linkedin}" target="_blank">linkedin.com/in/${data.info.linkedin}</a>`;
-		document.getElementById('contact-github').innerHTML = `<a href="https://github.com/${data.info.github}" target="_blank">github.com/${data.info.github}</a>`;
+      document.getElementById('contact-email').textContent = data.info.email;
+      document.getElementById('contact-phone').textContent = data.info.phone;
+      document.getElementById('contact-linkedin').innerHTML = `<a href="https://linkedin.com/in/${data.info.linkedin}" target="_blank">linkedin.com/in/${data.info.linkedin}</a>`;
+      document.getElementById('contact-github').innerHTML = `<a href="https://github.com/${data.info.github}" target="_blank">github.com/${data.info.github}</a>`;
 
-		document.getElementById('summary').textContent = data.summary;
+      document.getElementById('summary').textContent = data.summary;
 
-		const achievementsTemplate = document.getElementById('achievements-template').innerHTML;
-		document.getElementById('achievements').innerHTML = data.achievements.map(achievement =>
-			processTemplate(achievementsTemplate, achievement)
-		).join('');
+      const achievementsTemplate = document.getElementById('achievements-template').innerHTML;
+      document.getElementById('achievements').innerHTML = data.achievements.map(achievement =>
+        processTemplate(achievementsTemplate, achievement)
+      ).join('');
 
-		const skillsTemplate = document.getElementById('skills-template').innerHTML;
-		document.getElementById('skills').innerHTML = data.skills.map(skill =>
-			processTemplate(skillsTemplate, { text: skill })
-		).join('');
+      const skillsTemplate = document.getElementById('skills-template').innerHTML;
+      document.getElementById('skills').innerHTML = data.skills.map(skill =>
+        processTemplate(skillsTemplate, { text: skill })
+      ).join('');
 
-		const experienceTemplate = document.getElementById('experience-template').innerHTML;
-		const bulletTemplate = document.getElementById('experience-bullet-template').innerHTML;
-		document.getElementById('experience').innerHTML = data.experience.map(experience =>
-			processTemplate(experienceTemplate, {
-				...experience,
-				period: `${experience.startYear} – ${experience.endYear}`,
-				bullets: experience.bullets.map(bullet =>
-					processTemplate(bulletTemplate, { text: bullet })
-				).join('')
-			})
-		).join('');
-	</script>
+      const experienceTemplate = document.getElementById('experience-template').innerHTML;
+      const bulletTemplate = document.getElementById('experience-bullet-template').innerHTML;
+      document.getElementById('experience').innerHTML = data.experience.map(experience =>
+        processTemplate(experienceTemplate, {
+          ...experience,
+          period: `${experience.startYear} – ${experience.endYear}`,
+          bullets: experience.bullets.map(bullet =>
+            processTemplate(bulletTemplate, { text: bullet })
+          ).join('')
+        })
+      ).join('');
+    }());
+  </script>
 </body>
 </html>
