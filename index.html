@@ -342,10 +342,6 @@
       color: var(--muted-color);
     }
 
-    .experience__summary {
-      margin-top: var(--rhythm-1);
-    }
-
     .experience__bullets {
       margin: var(--rhythm-1) 0 0 var(--rhythm-2);
     }
@@ -364,7 +360,7 @@
         border-radius: 14px;
         border: 1px solid var(--page-outline-color);
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        padding: var(--rhythm-5) var(--rhythm-4) 0;
+        padding: var(--rhythm-5) var(--rhythm-4) var(--rhythm-6);
         width: 900px;
       }
 
@@ -473,7 +469,7 @@
       <a
         aria-label="Download resume as PDF"
         download
-        href="Richard-Benjamin_Principal-Front-End-Engineer_Resume_2025.pdf"
+        href="Richard-Benjamin_Principal-Front-End-Engineer.pdf"
       >
         Download PDF
       </a>
@@ -539,7 +535,6 @@
         <h4 class="experience__company">${company}</h4>
         <time class="experience__period" datetime="${startYear}-${endYear}">${period}</time>
     	</header>
-      <p class="experience__summary">${summary}</p>
       <ul class="experience__bullets" role="list">${bullets}</ul>
     </article>
   </script>
@@ -592,10 +587,13 @@
           company: "Digital Trends",
           startYear: "2022",
           endYear: "2025",
-          summary: "Owned front-end performance and user experience for a tech-news platform with 30M monthly active users; set technical strategy and mentored engineers.",
           bullets: [
-            "Lifted Core Web Vitals from \"Needs Improvement\" to top 10% among large media sites.",
-            "Built a proprietary A/B testing framework that raised user engagement by 70%.",
+            "Owned the user experience for a tech-news platform with 30 million monthly active users.",
+            "Optimized front-end performance, achieving top 10% Core Web Vitals among large media sites.",
+            "Directed the design and implementation of user subscription features and account management flows.",
+            "Built a proprietary A/B testing framework that increased user engagement by 70%.",
+            "Designed a modular front-end build system using Webpack to improve code splitting, linting, and testing.",
+            "Defined technology standards, mentored engineers, and conducted code reviews.",
           ],
         },
         {
@@ -603,11 +601,13 @@
           company: "Digital Trends",
           startYear: "2019",
           endYear: "2022",
-          summary: "Led a cross-functional team that shipped a new content platform and next-gen ad tech while maintaining high performance.",
           bullets: [
-            "Delivered a modular content platform that cut new vertical launch time from four weeks to same-day.",
-            "Hit 80% ad viewability compliance ahead of industry peers by utilizing a context-aware, user-timing strategy.",
-            "Built an ad templating and deployment tool to automate creative roll-outs and reduce engineering effort.",
+            "Managed a team of four engineers, leading hiring, daily standups, and weekly scrum meetings.",
+            "Translated Figma designs from talented designers into pixel-perfect templates and React components.",
+            "Delivered a modular content platform that cut new vertical launch time from four weeks to same day.",
+            "Increased newsletter subscription rate by 10x without relying on intrusive interstitials.",
+            "Achieved 80% ad viewability compliance ahead of industry peers using a context-aware, user-timing strategy.",
+            "Built an ad templating and deployment tool that automated creative rollouts, saving 12 developer hours per week.",
           ]
         },
         {
@@ -615,10 +615,13 @@
           company: "Digital Trends",
           startYear: "2012",
           endYear: "2019",
-          summary: "Helped modernize the legacy WordPress stack into a modular, high-traffic publishing platform; pioneered successful monetization features.",
           bullets: [
             "Completed a full WordPress re-architecture and rebrand that led to a 30% increase in session duration.",
-            "Developed a Prebid/GPT wrapper to unlock new programmatic revenue and custom ad unit capabilities.",
+            "Established design systems enabling expansion from two distinct sites to a network of cohesive publications.",
+            "Invented multiple high-performing, revenue-generating custom ad units and monetized experiences.",
+            "Developed an early Prebid/GPT wrapper to unlock new programmatic revenue.",
+            "Integrated video platforms and IMA3 to optimize delivery and ad revenue while maintaining engaged viewership.",
+            "Helped establish full-page caching strategies, ensuring sub-200ms response times during high-traffic surges.",
           ],
         },
         {
@@ -626,8 +629,13 @@
           company: "Freelance",
           startYear: "2001",
           endYear: "2011",
-          summary: "Produced tailored sites and web apps for high-profile clients, and maintained long-term relationships for over a decade.",
-          bullets: [],
+          bullets: [
+            "Built websites and apps for 30+ clients across pro sports, media, finance, and tech industries.",
+            "Delivered high-visibility projects for notable clients including Olympian Kerri Walsh and MLB player Pablo Sandoval.",
+            "Created responsive, accessible UIs with PHP, HTML, CSS, and JavaScript.",
+            "Optimized front-end performance and compatibility during an era of fragmented browser behavior.",
+            "Led projects from concept to launch, earning 100% client satisfaction and steady referral-based growth.",
+          ],
         },
       ],
     };
